@@ -1,11 +1,11 @@
 pipeline {
     agent  {
-        node{
-            label 'slaveNode'
-            customWorkspace "myWorkspace"
-        }
+             node{
+                 label 'master'
+                 customWorkspace "myWorkspace"
+             }
 
-    }
+         }
 
     environment {
         hlw = 'hello world'
